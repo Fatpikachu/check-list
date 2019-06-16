@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.badge-primary {
+  background-color: #b11a21 !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.todo-container .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(198, 225, 255);
+}
+
+.todo-container hr {
+  margin: 1.5rem 0;
+}
+
+.todo-container .card-title {
+  margin: 0.5rem;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.form-control{
+  border-width: .3rem
+}
+
+.todo-container ul li {
+  margin-bottom: 1rem;
+}
+
+li {
+  font-family: Arial;
+  font-size: 1.2rem;
+}
+
+.todo-container .btn, .input {
+  font-size: 90%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  opacity: 0.6;
+  height: 45px;
+  transition: all 0.2s;
+}
+
+.input {
+  height: 45px;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .todo-container .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.536);
+  }
+  .todo-container .card:hover .btn {
+    opacity: 1;
+  }
+  .todo-container .card:hover .card-title {
+    opacity: 1;
+  }
+  .todo-container .card:hover .form-control {
+    opacity: 1;
+  }
+}
